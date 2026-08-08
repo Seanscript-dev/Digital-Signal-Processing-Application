@@ -1,0 +1,8 @@
+# requirements.txt
+PySide6>=6.5.0
+numpy>=1.24.0
+scipy>=1.10.0
+pyqtgraph>=0.13.0
+matplotlib>=3.7.0  # optional, for additional plotting
+soundfile>=0.12.0  # for MP3/WAV audio file I/O
+opencv-python>=4.8.0.76  # for image processing filters/operators
