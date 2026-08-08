@@ -1,0 +1,148 @@
+<svg width="680" height="680" viewBox="0 0 680 680" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>DSPulse</title>
+  <desc>DSPulse formal logo — a circular dark navy emblem with a clean DS monogram, thin concentric rings, a minimal waveform, and serif-style wordmark</desc>
+
+  <defs>
+    <style>
+      @keyframes breathe { 0%,100%{opacity:.12} 50%{opacity:.28} }
+      @keyframes scan { to { stroke-dashoffset: -80; } }
+      .r1 { animation: breathe 4s ease-in-out infinite; }
+      .r2 { animation: breathe 4s ease-in-out infinite 1s; }
+      .r3 { animation: breathe 4s ease-in-out infinite 2s; }
+      .sig { animation: scan 3.5s linear infinite; }
+    </style>
+
+    <linearGradient id="platGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#c8d8e8"/>
+      <stop offset="50%" stop-color="#e8eef4"/>
+      <stop offset="100%" stop-color="#a0b4c8"/>
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1120"/>
+      <stop offset="100%" stop-color="#060c18"/>
+    </linearGradient>
+    <linearGradient id="dGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#d8e8f4"/>
+      <stop offset="100%" stop-color="#8aaec8"/>
+    </linearGradient>
+    <linearGradient id="sGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#c8d8e8"/>
+      <stop offset="100%" stop-color="#6a8aaa"/>
+    </linearGradient>
+    <linearGradient id="waveGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4a6a8a" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#8aaec8" stop-opacity="1"/>
+      <stop offset="70%" stop-color="#8aaec8" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#4a6a8a" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="wordGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#3a6aaa"/>
+      <stop offset="50%" stop-color="#6aaae0"/>
+      <stop offset="100%" stop-color="#3a6aaa"/>
+    </linearGradient>
+    <clipPath id="circ">
+      <circle cx="340" cy="340" r="268"/>
+    </clipPath>
+  </defs>
+
+  <!-- Dark background fill -->
+  <rect width="680" height="680" fill="#060c18"/>
+
+  <!-- Background circle -->
+  <circle cx="340" cy="340" r="290" fill="#060c18" opacity="0.4"/>
+  <circle cx="340" cy="340" r="278" fill="url(#bgGrad)"/>
+
+  <!-- Concentric rings -->
+  <circle class="r3" cx="340" cy="340" r="258" fill="none" stroke="#8aaec8" stroke-width="0.5"/>
+  <circle class="r2" cx="340" cy="340" r="240" fill="none" stroke="#8aaec8" stroke-width="0.5"/>
+  <circle class="r1" cx="340" cy="340" r="220" fill="none" stroke="#8aaec8" stroke-width="0.5"/>
+
+  <!-- Outer border — double ring -->
+  <circle cx="340" cy="340" r="278" fill="none" stroke="#1e3050" stroke-width="1.5"/>
+  <circle cx="340" cy="340" r="272" fill="none" stroke="url(#platGrad)" stroke-width="1.5"/>
+  <circle cx="340" cy="340" r="265" fill="none" stroke="#1a2840" stroke-width="0.5"/>
+
+  <!-- Tick marks -->
+  <g stroke="#4a6a8a" stroke-width="1" opacity="0.6">
+    <line x1="340" y1="75" x2="340" y2="90"/>
+    <line x1="340" y1="592" x2="340" y2="607"/>
+    <line x1="75" y1="340" x2="90" y2="340"/>
+    <line x1="592" y1="340" x2="607" y2="340"/>
+    <line x1="143" y1="143" x2="154" y2="154"/>
+    <line x1="526" y1="143" x2="537" y2="154"/>
+    <line x1="143" y1="537" x2="154" y2="526"/>
+    <line x1="526" y1="537" x2="537" y2="526"/>
+  </g>
+  <g stroke="#8aaec8" stroke-width="1.2" opacity="0.8">
+    <line x1="340" y1="68" x2="340" y2="90"/>
+    <line x1="340" y1="592" x2="340" y2="614"/>
+    <line x1="68" y1="340" x2="90" y2="340"/>
+    <line x1="592" y1="340" x2="614" y2="340"/>
+  </g>
+
+  <!-- Horizontal rules -->
+  <line x1="140" y1="232" x2="540" y2="232" stroke="#2a3e58" stroke-width="0.8"/>
+  <line x1="140" y1="450" x2="540" y2="450" stroke="#2a3e58" stroke-width="0.8"/>
+
+  <!-- Signal waveform -->
+  <g clip-path="url(#circ)">
+    <path class="sig"
+          d="M130,341 L185,341 C198,341 202,318 215,318 C228,318 232,364 245,364 C258,364 262,318 275,318 C288,318 292,364 305,364 C318,364 322,318 335,318 C348,318 352,364 365,364 C378,364 382,318 395,318 C408,318 412,364 425,364 C438,364 442,341 460,341 L550,341"
+          fill="none" stroke="url(#waveGrad)" stroke-width="1.2" stroke-dasharray="200 600" opacity="0.5"/>
+    <line x1="130" y1="341" x2="550" y2="341" stroke="#2a3e58" stroke-width="0.5"/>
+  </g>
+
+  <!-- D — vertical stem -->
+  <rect x="186" y="248" width="16" height="144" rx="3" fill="url(#dGrad)"/>
+  <!-- D — outer curve -->
+  <path d="M202,248 Q318,248 318,320 Q318,392 202,392" fill="none" stroke="url(#dGrad)" stroke-width="16" stroke-linecap="butt"/>
+  <!-- D — inner cutout -->
+  <path d="M202,270 Q294,270 294,320 Q294,370 202,370" fill="none" stroke="#0b1120" stroke-width="9"/>
+
+  <!-- Divider hairline -->
+  <line x1="338" y1="255" x2="338" y2="385" stroke="#2a3e58" stroke-width="0.8"/>
+
+  <!-- S -->
+  <path d="M468,272 Q468,252 446,252 Q408,252 408,284 Q408,316 446,322 Q484,328 484,362 Q484,392 446,392 Q408,392 408,372"
+        fill="none" stroke="url(#sGrad)" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Corner ornaments -->
+  <rect x="182" y="244" width="8" height="8" fill="#8aaec8" opacity="0.6"/>
+  <rect x="182" y="388" width="8" height="8" fill="#8aaec8" opacity="0.6"/>
+  <rect x="490" y="244" width="8" height="8" fill="#8aaec8" opacity="0.6"/>
+  <rect x="490" y="388" width="8" height="8" fill="#8aaec8" opacity="0.6"/>
+
+  <!-- Wordmark -->
+  <text x="340" y="494"
+        text-anchor="middle"
+        font-family="'Georgia', 'Times New Roman', serif"
+        font-weight="400"
+        font-size="22"
+        letter-spacing="10"
+        fill="url(#wordGrad)"
+        opacity="0.95">DSPULSE</text>
+
+  <!-- Rule beneath wordmark -->
+  <line x1="258" y1="504" x2="422" y2="504" stroke="#2a3e58" stroke-width="0.8"/>
+
+  <!-- Tagline -->
+  <text x="340" y="522"
+        text-anchor="middle"
+        font-family="'Arial', sans-serif"
+        font-weight="400"
+        font-size="10"
+        letter-spacing="4"
+        fill="#3a5570"
+        opacity="0.9">DIGITAL SIGNAL PROCESSING</text>
+
+  <!-- Est. line -->
+  <text x="340" y="192"
+        text-anchor="middle"
+        font-family="'Arial', sans-serif"
+        font-weight="400"
+        font-size="10"
+        letter-spacing="4"
+        fill="#3a5570"
+        opacity="0.8">EST. MMXXIV</text>
+
+</svg>
