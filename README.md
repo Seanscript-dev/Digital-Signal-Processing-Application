@@ -1,4 +1,7 @@
 # Digital-Signal-Processing-Application
+<img width="1830" height="937" alt="image" src="https://github.com/user-attachments/assets/dfb77fa9-9829-4f9b-aa07-2de45445955b" /><img width="1918" height="1018" alt="image" src="https://github.com/user-attachments/assets/3347f65c-fc71-4160-a47f-a6226fe7afb2" />
+
+
 # DSPulse Studio
 
 > **An interactive Digital Signal Processing application built with Python and PySide6 for learning, analyzing, and visualizing digital signals.**
